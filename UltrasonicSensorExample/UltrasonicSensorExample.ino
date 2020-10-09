@@ -2,7 +2,7 @@
 * Ultrasonic Sensor (HC-SR04) Distance Detector
 * Core Lab: Objects - Bomani Oseni McClendon
 *
-* The ultrasonic sensor emits and ultrasonic sound (a sound that is out of the 
+* The ultrasonic sensor emits an ultrasonic sound (a sound that is out of the 
 * range of human hearing) and measures the time that it takes for that sound
 * to bounce off an object and return to the sensor. Using this duration, along
 * with the known speed of sound (343 meter/second), we can calculate the
@@ -24,11 +24,11 @@
 int trigPin = 11; // Connect to TRIG on sensor
 int echoPin = 12; // Connect to ECHO on sensor
 
-long duration, meters, centimeters, inches;
+long duration, meters, centimeters, inches; // -2,147,483,648 to 2,147,483,647
  
 void setup() {
   // Begin Serial Port
-  Serial.begin (9600);
+  Serial.begin(9600);
   
   //Define inputs & outputs
   pinMode(trigPin, OUTPUT);
@@ -62,7 +62,7 @@ void loop() {
   // will only need half of the duration to calculate the distance from the sensor to the
   // object.
   // Second, we need to convert the halved duration into a distance using the speed of sound.
-  // The speed of sound travels at 0.0343 cm/microsecon and 0.0135 inches/microsecond. Let's
+  // The speed of sound travels at 0.0343 cm/microsecond and 0.0135 inches/microsecond. Let's
   // use these values to calculate the distance in centimeters and inches using the general
   // equation: distance = time * speed.
   centimeters = (duration / 2) * 0.0343;

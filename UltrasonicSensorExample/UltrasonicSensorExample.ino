@@ -1,6 +1,6 @@
 /*
 * Ultrasonic Sensor (HC-SR04) Distance Detector
-* Core Lab: Objects - Bomani Oseni McClendon
+* Bomani Oseni McClendon
 *
 * The ultrasonic sensor emits an ultrasonic sound (a sound that is out of the 
 * range of human hearing) and measures the time that it takes for that sound
@@ -14,11 +14,11 @@
 *
 * Ultrasonic Sensor Pins:
 * VCC: +5VDC
-* Trig : Trigger (INPUT) - Pin 11
+* Trig: Trigger (INPUT) - Pin 11
 * Echo: Echo (OUTPUT) - Pin 12
 * GND: GND
 * 
-* Data Sheet: https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
+* Datasheet: https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
 */
 
 int trigPin = 11; // Connect to TRIG on sensor

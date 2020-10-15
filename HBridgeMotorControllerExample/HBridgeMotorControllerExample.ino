@@ -28,23 +28,30 @@
  * Datasheet: https://www.arduino.cc/documents/datasheets/H-bridge_motor_driver.PDF
  */
 const int input1 = 8;
-const int innput2 = 9;
+const int input2 = 9;
 
 void setup() {
+  // Set INPUT 1 & 2 as output pins.
   pinMode(input1, OUTPUT);
   pinMode(input2, OUTPUT);
 }
 
 void loop() {
+  // Turn in INPUT 1's direction.
   digitalWrite(input1, HIGH);
   digitalWrite(input2, LOW);
   delay(2000);
+
+  // By making INPUT 1 the same as INPUT 2, we stop the motor.
   digitalWrite(input1, LOW);
   delay(1000);
 
+  // Turn in INPUT 2's direction.
   digitalWrite(input1, LOW);
   digitalWrite(input2, HIGH);
   delay(2000);
+
+  // By making INPUT 2 the same as INPUT 1, we stop the motor.
   digitalWrite(input2, LOW);
   delay(1000);
 }

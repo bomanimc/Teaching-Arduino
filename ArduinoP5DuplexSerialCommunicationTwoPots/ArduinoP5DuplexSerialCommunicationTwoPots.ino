@@ -2,7 +2,7 @@
  * Arduino & P5.js Duplex Communication
  * Bomani Oseni McClendon
  * 
- * Find the corresponding p5.js code here: https://editor.p5js.org/bomanimc/sketches/9BIyMWXZk
+ * Find the corresponding p5.js code here: https://editor.p5js.org/bomanimc/sketches/keQWv59Ug
  */
 
 int leftPotPin = A0;

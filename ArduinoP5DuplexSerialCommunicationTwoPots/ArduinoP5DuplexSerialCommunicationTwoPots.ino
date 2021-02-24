@@ -21,7 +21,7 @@ void setup() {
   // Set pin A1 as an input.
   pinMode(rightPotPin, INPUT);
 
-  // Set pin A1 as an input.
+  // Set pin 7 as an input.
   pinMode(ledPin, OUTPUT);
 }
  
